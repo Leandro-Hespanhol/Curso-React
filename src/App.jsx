@@ -3,6 +3,8 @@ import React from 'react';
 
 import Card from './components/Layout/Card';
 
+import IndiretaPai from './components/comunicacao/IndiretaPai';
+import DiretaPai from './components/comunicacao/DiretaPai';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
@@ -19,10 +21,18 @@ export default (_) => (
     <h1> Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#10 Comunicação inDireta" color="#00C8F8">
+        <IndiretaPai></IndiretaPai>
+      </Card>
+
+      <Card titulo="#9 Comunicação Direta" color="#354458">
+        <DiretaPai></DiretaPai>
+      </Card>
+
       <Card titulo="#8 Renderização Condicional" color="#8C6954">
         <ParOuImpar numero={20}></ParOuImpar>
-        <UsuarioInfo usuario={{ nome: 'Fernando' }}></UsuarioInfo>
-        <UsuarioInfo usuario={{ email: 'fer@nando.com' }}></UsuarioInfo>
+        <UsuarioInfo usuario={{ email: 'as@Fernando' }}></UsuarioInfo>
+        {/*    <UsuarioInfo usuario={{ email: 'fer@nando.com' }}></UsuarioInfo> */}
       </Card>
 
       <Card titulo="#7 Repetição Desafio" color="#FF432E ">
