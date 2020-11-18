@@ -3,6 +3,7 @@ import React from 'react';
 
 import Card from './components/Layout/Card';
 
+import Megasena from './components/megasena/Megasena';
 import Contador from './components/contador/Contador';
 import Input from './components/formulario/Input';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
@@ -23,6 +24,9 @@ export default (_) => (
     <h1> Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#13 MegaSena da Virada" color="#E1D041">
+        <Megasena></Megasena>
+      </Card>
       <Card titulo="#12 Contador" color="#00C8F8">
         <Contador numeroInicial={10}></Contador>
       </Card>
